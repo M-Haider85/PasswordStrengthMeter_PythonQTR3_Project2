@@ -7,12 +7,27 @@ st.set_page_config(page_title="Password Strength Checker by Haider Asghar", page
 #custom CSS for the app
 st.markdown("""
 <style>
-            .main {text-align: center;}
-            .stTextInput {width: 60% !important; margin: auto;}
-            .stButton button {width: 50%; background-color: #4CAF50; color: white; font-size: 18px; center;}
-            .stButton button:hover {background-color: #6a994e;}
+    .main {
+        text-align: center;
+    }
+    .stTextInput {
+        width: 60% !important;
+        margin: auto;
+    }
+    .stButton button {
+        width: 50%;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+        display: block;
+        margin: auto;
+    }
+    .stButton button:hover {
+        background-color: #6a994e;
+    }
 </style>
 """, unsafe_allow_html=True)
+
 
 #page title & description
 st.title("🔑 Password Strength Checker")
